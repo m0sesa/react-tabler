@@ -37,10 +37,10 @@ export default function PageHeader({ preTitle, title, buttonTitle, modalId, seco
                             ))}
                             {buttonTitle &&
                                 <>
-                                    <a href="#" className="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target={modalId}>
+                                    <a href="#" className="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target={`#${modalId}`}>
                                         {buttonIcon && buttonIcon} {buttonTitle}
                                     </a>
-                                    <a href="#" className="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target={modalId} aria-label={buttonTitle}>
+                                    <a href="#" className="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target={`#${modalId}`} aria-label={buttonTitle}>
                                         {buttonIcon && buttonIcon}
                                     </a>
                                 </>}
